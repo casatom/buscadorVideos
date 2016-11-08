@@ -1,4 +1,4 @@
-from pyTelegramBotAPI import telebot 
+import telebot 
 
 TOKEN = '244028879:AAF8abnnbX_wwrjZpQMqCXqL8wOK6QrT44w' 
 
