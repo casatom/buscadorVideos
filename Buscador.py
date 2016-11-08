@@ -1,3 +1,4 @@
+pip install -r requirements.txt
 
 from pyquery import PyQuery as Pq
 from urllib import urlencode
