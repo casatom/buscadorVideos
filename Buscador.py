@@ -2,8 +2,11 @@ pip install -r requirements.txt
 
 from pyquery import PyQuery as Pq
 from urllib import urlencode
+from pyTelegramBotAPI import telebot 
 
+TOKEN = '280355257:AAGs6hryt9rs_ZBIHNJxzp1qIowZLhe486s' 
 
+bot = telebot.TeleBot(TOKEN)
  
 def search_youtube_video(title, pages):
     for page in range(pages):
@@ -33,6 +36,13 @@ def search_youtube_video(title, pages):
             print
             print "url:", url
  
+@bot.message_handler(commands=['buscar_cancion'])
+def command_help(message):
+    bot.reply_to(message, url)
+
+@bot.message_handler(commands=['start', 'help'])
+def command_help(message):
+    bot.reply_to(message, "Hola, escribe /buscar_cancion y el nombre de la cancion y te enviaremos un  link")
 
 
 
