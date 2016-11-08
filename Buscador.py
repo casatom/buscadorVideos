@@ -1,8 +1,7 @@
-import telebot 
+import telebot
 
-TOKEN = '244028879:AAF8abnnbX_wwrjZpQMqCXqL8wOK6QrT44w' 
-
-bot = telebot.TeleBot(TOKEN)
+TOKEN = '244028879:AAF8abnnbX_wwrjZpQMqCXqL8wOK6QrT44w' #Ponemos nuestro TOKEN generado con el @BotFather  
+bot = telebot.TeleBot(TOKEN)                         #Creamos nuestra instancia "mi_bot" a partir de ese TOKEN
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):

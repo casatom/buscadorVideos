@@ -1,3 +1,5 @@
+pyTelegramBotAPI==0.2.9
+py==1.4.29
 pytest==3.0.2
 requests==2.7.0
 six==1.9.0
