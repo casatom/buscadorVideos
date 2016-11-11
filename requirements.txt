@@ -1,11 +1,4 @@
-cssselect==0.9.1
-lxml==3.3.3
 pyTelegramBotAPI==2.2.3
-pyquery==1.2.4
 python-xlib==0.14
-requests==2.11.1
-six==1.10.0
 uTidylib==0.2
 urllib3==1.19
-
-
