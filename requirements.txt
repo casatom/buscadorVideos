@@ -1,3 +1,3 @@
-python-xlib==0.14
 uTidylib==0.2
 urllib3==1.19
+pyTelegramBotAPI==2.2.3
